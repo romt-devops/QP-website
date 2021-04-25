@@ -14,10 +14,13 @@
       name: nginx
       state: present
 
-#  - name: Insert Index Page
-#    template:
-#      src: index.html
-#      dest: /usr/share/nginx/html/index.html
+  - name: Creates directory
+    file:
+      path: /src/www
+      state: directory
+      owner: nginx
+      group: nginx
+      mode: 0775
 
   - name: Start NGiNX
     service:
