@@ -22,6 +22,11 @@
       group: nginx
       mode: 0775
 
+   - name: copy the nginx config file
+     copy:
+      src: /etc/nginx/nginx.conf
+      dest: /etc/nginx/nginx.conf
+
   - name: Start NGiNX
     service:
       name: nginx
