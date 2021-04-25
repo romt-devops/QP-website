@@ -1,6 +1,6 @@
 ---
 - name: Install nginx
-  hosts: prod-server1
+  hosts: prod_server1
   become: true
 
   tasks:
