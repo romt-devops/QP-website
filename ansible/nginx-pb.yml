@@ -16,7 +16,7 @@
 
   - name: Creates directory
     file:
-      path: /src/www
+      path: /usr/share/nginx/html/prod
       state: directory
       owner: nginx
       group: nginx
