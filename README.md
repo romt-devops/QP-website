@@ -1,7 +1,5 @@
 # QP-website
 
-Readme in under construction now!
-
 В этом репозитории две ветки - stage и prod.
 
 Ветка stage отвечает за код на staging(217.182.77.181:80) сервере. Каждый раз, когда программист делает git push origin в эту ветку автоматически запускается новый Джоб в Jenkins и деплоит код на staging server. Всегда, в конце страницы будет отображено информацию о сборке и о текущей ветке (Branch: origin/stage Build id: 21).
